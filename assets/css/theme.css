@@ -1,0 +1,83 @@
+:root {
+  --bg: #121212;
+  --bg-alt: #0c0c0c;
+  --surface: #1a1a1a;
+  --text: #f2f0ec;
+  --text-dim: rgba(255,255,255,0.7);
+  --text-dimmer: rgba(255,255,255,0.5);
+  --border: rgba(255,255,255,0.08);
+  --accent: oklch(0.55 0.18 260);
+  --accent-light: oklch(0.68 0.15 260);
+}
+
+html[data-theme="light"] {
+  --bg: #efece6;
+  --bg-alt: #e5e1d8;
+  --surface: #ffffff;
+  --text: #1a1a1a;
+  --text-dim: rgba(0,0,0,0.65);
+  --text-dimmer: rgba(0,0,0,0.5);
+  --border: rgba(0,0,0,0.1);
+  --accent: oklch(0.5 0.18 260);
+  --accent-light: oklch(0.4 0.18 260);
+}
+
+body {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+  font-family: 'Inter', sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Fraunces', serif !important;
+  color: var(--text) !important;
+}
+
+a { color: var(--accent) !important; }
+a:hover { color: var(--accent-light) !important; }
+
+#header, #footer, #main, section, .project-container {
+  background: transparent !important;
+}
+
+p, li {
+  color: var(--text-dim) !important;
+}
+
+.button {
+  border-color: var(--accent) !important;
+  color: var(--text) !important;
+  background: transparent !important;
+}
+.button:hover {
+  background: var(--accent) !important;
+  color: var(--bg) !important;
+}
+
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  width: 52px;
+  height: 28px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding: 2px;
+  transition: background 0.3s ease;
+}
+.theme-toggle-knob {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--accent);
+  transition: transform 0.3s ease;
+}
+html[data-theme="light"] .theme-toggle-knob {
+  transform: translateX(24px);
+}
