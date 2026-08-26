@@ -10,3 +10,6 @@ Created assets/css/theme.css (CSS custom properties for dark/light palettes usin
 
 ## 2026-08-25 — Rebuilt voty/marketplace/fashion-app with editorial hero layout
 Replaced the old `.project-container`/`.project-back-link`/`.project-gallery` markup in voty.html, marketplace.html, and fashion-app.html with a new "Project Story" layout: a full-bleed 640px hero image with gradient overlay and large italic Fraunces title, a horizontally scrollable filmstrip gallery of numbered thumbnails, and a two-column body (story text + accent-bordered key-stat callout). Head links (theme.css, Google Fonts) and the script tags before `</body>` (including theme-toggle.js) were left untouched — only the visible body content changed.
+
+## 2026-08-25 — Added RSN Media and real estate CRM project sections
+Added two new work-item articles to the Experience section (`#two`) in index.html, after "The Affair: VôTY Fashion Party": "Owner, RSN Media" (linking to rsn-media.html) and "Jimsons Real Estate Analysis CRM" (linking to real-estate-crm.html, story marked "coming soon"). Created rsn-media.html and real-estate-crm.html using the same editorial hero-layout template as voty.html (identical head, hero image/title/subtitle, filmstrip gallery, two-column body). Both pages currently reuse images/thumbs/01-04.jpg as placeholders until real project images are available.
