@@ -41,6 +41,9 @@ Corrected lsu.html's stat callout from "$25,00 in marketplace sales" (missing a 
 ## 2026-08-27 — Restructured Lafayette page for slides embed and photo gallery
 Converted lafayette.html from the old absolute-positioned 640px hero-banner layout to the same top-to-bottom flow layout used for fashion-app.html/tulane.html/lsu.html (back link, then title/subtitle, then a lead visual, then the two-column body). Unlike those three pages, Lafayette has no pitch video yet, so its lead visual is a placeholder pitch-deck embed slot (16:10.4 aspect box marked `<!-- SLIDES_EMBED_PLACEHOLDER -->`, currently showing "[Pitch deck coming soon]") ready to swap in a real embed later. The old placeholder image filmstrip gallery was kept (not removed, unlike the video pages) but relocated below the pitch-deck slot and marked `<!-- PHOTO_GALLERY_PLACEHOLDER -->` for future real event photos. Body story/stat copy remains "[Full story coming soon]" / "[Key stat coming soon]" pending real content.
 
+## 2026-08-27 — Swapped Tulane page title/subtitle for consistency with Lafayette and LSU
+Changed tulane.html's hero title from "Venture Challenges" to "Tulane" and its subtitle from "Tulane Venture Challenge · 2026" to "Venture Challenge · 2026", matching the title/subtitle pattern used on lafayette.html and lsu.html (city/school name as title, "Venture Challenge · year" as subtitle).
+
 ## 2026-08-27 — Clarified Tulane stat as pitched ask, not completed raise
 Reworded tulane.html's stat callout from "$250,000 raise on a SAFE" to "Pitched a $250,000 raise on a SAFE" (and "Targeting $3M GMV" to "Goal: $3M GMV") so it reads as the funding ask presented at the Tulane Venture Challenge, not a raise VÔTY has actually closed.
 
