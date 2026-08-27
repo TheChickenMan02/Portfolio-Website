@@ -37,3 +37,6 @@ Corrected the VÔTY phase timeline (both in index.html's "Read more about each p
 
 ## 2026-08-27 — Fixed LSU stat typo
 Corrected lsu.html's stat callout from "$25,00 in marketplace sales" (missing a digit) to "$22,500 in marketplace sales."
+
+## 2026-08-27 — Restructured Lafayette page for slides embed and photo gallery
+Converted lafayette.html from the old absolute-positioned 640px hero-banner layout to the same top-to-bottom flow layout used for fashion-app.html/tulane.html/lsu.html (back link, then title/subtitle, then a lead visual, then the two-column body). Unlike those three pages, Lafayette has no pitch video yet, so its lead visual is a placeholder pitch-deck embed slot (16:10.4 aspect box marked `<!-- SLIDES_EMBED_PLACEHOLDER -->`, currently showing "[Pitch deck coming soon]") ready to swap in a real embed later. The old placeholder image filmstrip gallery was kept (not removed, unlike the video pages) but relocated below the pitch-deck slot and marked `<!-- PHOTO_GALLERY_PLACEHOLDER -->` for future real event photos. Body story/stat copy remains "[Full story coming soon]" / "[Key stat coming soon]" pending real content.
