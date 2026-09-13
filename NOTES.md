@@ -55,3 +55,6 @@ Replaced the placeholder body paragraph and "[Key stat coming soon]" stat callou
 
 ## 2026-08-27 — Named RSN Media clients
 Updated rsn-media.html's first body paragraph to name two real clients, CrossFit Whiteboard and Ignite Fitness LA in Lafayette, Louisiana.
+
+## 2026-09-13 — Removed Jimsons Real Estate Analysis CRM project
+Removed the "Jimsons Real Estate Analysis CRM" project entirely: deleted real-estate-crm.html and removed its work-item card (image link, h3, and p) from the Experience section (`#two`) of index.html. No other references to real-estate-crm.html or the project name remained in the codebase.
