@@ -81,3 +81,37 @@ p, li {
 html[data-theme="light"] .theme-toggle-knob {
   transform: translateX(24px);
 }
+
+/* Responsive editorial layout */
+html, body {
+  overflow-x: hidden;
+}
+.editorial-hero-title {
+  overflow-wrap: break-word;
+}
+@media (max-width: 760px) {
+  .editorial-hero-title {
+    font-size: clamp(32px, 9vw, 76px) !important;
+    line-height: 1.05 !important;
+  }
+  .editorial-hero-subtitle {
+    font-size: clamp(10px, 2.5vw, 11px) !important;
+  }
+  .editorial-container {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .editorial-gallery-tile {
+    width: 70vw !important;
+    max-width: 260px !important;
+  }
+  .editorial-grid {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .editorial-hero {
+    height: 420px !important;
+  }
+}
