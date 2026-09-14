@@ -24,10 +24,17 @@
 				padding-bottom: 0.5rem;
 			}
 			.project-gallery img {
-				flex: 0 0 80%;
+				flex: 0 0 auto;
+				height: 480px;
+				width: auto;
 				scroll-snap-align: center;
 				border-radius: 4px;
 				object-fit: cover;
+			}
+			@media (max-width: 760px) {
+				.project-gallery img {
+					height: 320px;
+				}
 			}
 		</style>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,11 +55,21 @@
 			<div class="editorial-hero-subtitle" style="margin-top:14px;font:500 11px/1.5 'Inter',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:var(--text-dimmer)">Founder &amp; CEO &middot; V&Ocirc;TY &middot; Baton Rouge, LA</div>
 		</div>
 
+		<img src="images/fulls/affair.jpg" alt="The Affair: VôTY Fashion Party" style="width:100%;border-radius:4px;display:block;margin:32px 0 0" />
+
 		<div class="project-gallery" style="margin:32px 0 0">
-			<img src="images/thumbs/01.jpg" alt="" />
-			<img src="images/thumbs/02.jpg" alt="" />
-			<img src="images/thumbs/03.jpg" alt="" />
-			<img src="images/thumbs/04.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/01.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/02.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/03.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/04.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/05.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/06.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/07.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/08.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/09.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/10.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/11.jpg" alt="" />
+			<img src="images/fulls/affair-gallery/12.jpg" alt="" />
 		</div>
 
 		<div class="editorial-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:56px 0 80px">
