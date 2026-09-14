@@ -97,15 +97,18 @@
 						</ul>
 						<div class="row">
 							<div class="col-8 col-12-small">
-								<form method="post" action="#">
+								<form method="post" id="contact-form">
+									<input type="hidden" name="access_key" value="23c7f634-6d2a-4d2e-9015-e203595115da" />
+									<input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
 									<div class="row gtr-uniform gtr-50">
-										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+										<div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" required /></div>
+										<div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" required /></div>
+										<div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4" required></textarea></div>
 									</div>
 								</form>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" value="Send Message" form="contact-form" /></li>
+									<li><span id="contact-form-status" style="font-size:0.85rem;"></span></li>
 								</ul>
 							</div>
 							<div class="col-4 col-12-small">
@@ -469,6 +472,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/contact-form.js"></script>
 
 	<script src="assets/js/theme-toggle.js"></script>
 </body>
