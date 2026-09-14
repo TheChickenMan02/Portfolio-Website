@@ -37,6 +37,22 @@
 			}, 100);
 		});
 
+	// Re-scroll to the target hash once images have finished loading and
+	// pushed the layout into its final position (fixes links like
+	// "index.html#two" landing in the wrong spot).
+		$window.on('load', function() {
+			if (window.location.hash) {
+
+				var $target = $(window.location.hash);
+
+				if ($target.length)
+					window.setTimeout(function() {
+						$window.scrollTop($target.offset().top);
+					}, 100);
+
+			}
+		});
+
 	// Touch?
 		if (browser.mobile) {
 
