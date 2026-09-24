@@ -115,3 +115,6 @@ html, body {
     height: 420px !important;
   }
 }
+
+#header > .inner { text-align: center; }
+#header .image.avatar { display: block; margin: 0 auto 1em; cursor: zoom-in; }

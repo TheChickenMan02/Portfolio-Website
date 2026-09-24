@@ -128,6 +128,19 @@
 					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
 				});
 
+				$('#header').poptrox({
+					overlayColor: '#2c2c2c',
+					overlayOpacity: 0.85,
+					popupCloserText: '',
+					popupLoaderText: '',
+					selector: 'a.avatar',
+					usePopupCaption: false,
+					usePopupDefaultStyling: false,
+					usePopupEasyClose: true,
+					usePopupNav: false,
+					windowMargin: (breakpoints.active('<=small') ? 0 : 50)
+				});
+
 			});
 
 })(jQuery);
